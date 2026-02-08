@@ -24,10 +24,10 @@ L’analyse suit la méthodologie **CRISP-DM** et se matérialise dans un **dash
 ## Objectifs du Projet (réalisés)
 
 
-1. Identification des **Top produits / catégories** pour prioriser stocks & promotions  
+1. Identification des **Top catégories** pour prioriser stocks & promotions  
    → **Mobiles & Accessories** domine très largement le CA
 
-2. Segmentation client (**RFM en cours / à finaliser**)  
+2. Segmentation client 
    → Premiers axes d’analyse : âge, genre, région, statut BI (Gross / Net / Valid)
 
 ## Modélisation des Données
