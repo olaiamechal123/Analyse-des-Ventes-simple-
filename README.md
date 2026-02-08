@@ -6,21 +6,6 @@
 Projet d’analyse des ventes en ligne sur les exercices 2020 et 2021 dans le but d’optimiser la gestion des stocks et d’améliorer la rétention client.  
 L’analyse suit la méthodologie **CRISP-DM** et se matérialise dans un **dashboard Power BI interactif** avec des mesures DAX.
 
-## Résultats Clés (extrait du dashboard)
-
-| Métrique                              | Valeur observée              | Commentaire principal                                      |
-|---------------------------------------|------------------------------|------------------------------------------------------------|
-| Nombre de clients uniques             | **~64 255**                  | Base clients significative                                 |
-| Quantité maximale commandée (1 ligne) | **501**                      | Pic exceptionnel (probable commande B2B ou promo massive)  |
-| Quantité minimale                     | **1**                        | Comportement standard                                      |
-| Revenu total période                  | **~498 M$**                  | (≈248 M$ Femmes + 249 M$ Hommes)                           |
-| Répartition Hommes / Femmes           | **50,08% F – 49,92% M**      | Quasi-parité très équilibrée                               |
-| Meilleure région                      | **South**                    | Nettement devant Midwest, West, Northeast                  |
-| Catégorie la plus performante         | **Mobiles & Accessories**    | Très loin devant les autres catégories                     |
-| Taux de remise moyen le plus élevé    | Entertainment / Superstore / Appliances | Jusqu’à ~150–170% (vérifier cohérence des données) |
-| Tranche d’âge la plus contributive    | **30–39 ans**                | Suivie de 60–69, 40–49, 50–59…                             |
-| Évolution AOV                         | 2020 : ~2 307 $ → 2021 : ~2 561 $ | +11 % environ (amélioration panier moyen)          |
-
 ## Objectifs du Projet (réalisés)
 
 
@@ -40,9 +25,6 @@ Après la phase de nettoyage et de préparation, les données ont été restruct
 |-------------------  |-------------------------------------------------------------|
 | **Dim_Customers**   |  Référentiel clients (un enregistrement par cust_id)        |
 | **Dim_Products**    |  Référentiel produits et catégories                         |
-
-
-
 
 ## KPIs Calculés (mesures DAX principales)
 
@@ -71,3 +53,23 @@ DIVIDE(
     [Total Revenue],
     0
 )
+## Dashboard
+
+![Dashboard Final](https://github.com/olaiamechal123/Analyse-des-Ventes-simple-/blob/main/dasboard.PNG)
+
+## Résultats Clés (extrait du dashboard)
+
+| Métrique                              | Valeur observée              | Commentaire principal                                      |
+|---------------------------------------|------------------------------|------------------------------------------------------------|
+| Nombre de clients uniques             | **~64 255**                  | Base clients significative                                 |
+| Quantité maximale commandée (1 ligne) | **501**                      | Pic exceptionnel (probable commande B2B ou promo massive)  |
+| Quantité minimale                     | **1**                        | Comportement standard                                      |
+| Revenu total période                  | **~498 M$**                  | (≈248 M$ Femmes + 249 M$ Hommes)                           |
+| Répartition Hommes / Femmes           | **50,08% F – 49,92% M**      | Quasi-parité très équilibrée                               |
+| Meilleure région                      | **South**                    | Nettement devant Midwest, West, Northeast                  |
+| Catégorie la plus performante         | **Mobiles & Accessories**    | Très loin devant les autres catégories                     |
+| Taux de remise moyen le plus élevé    | Entertainment / Superstore / Appliances | Jusqu’à ~150–170% (vérifier cohérence des données) |
+| Tranche d’âge la plus contributive    | **30–39 ans**                | Suivie de 60–69, 40–49, 50–59…                             |
+| Évolution AOV                         | 2020 : ~2 307 $ → 2021 : ~2 561 $ | +11 % environ (amélioration panier moyen)          |
+
+
