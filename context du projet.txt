@@ -1,0 +1,43 @@
+en se basant sur processsu crisp-dm pour realiser le probleeme , nos coubrons les phases demandes , definir les objectifs , comprehension cote metie ainis chargement de l'env virtuel , exploration et nettoyage des donneees puis visualisation dans power bi avec les mesurers ( dax mesurer pour le skpis)
+
+Analyser les ventes FY 2020-2021 pour optimiser le stocks et ameliorer la retention clients
+
+Objectives : 
+1- calculer la croissance des ventes entre 2020et 2021 
+2- indentifier les tops 10 produits par revenu pour prioirise les promotions 
+3- segmenyer les clients via RFM pour cibles les compagnes marketing
+
+les KPI cles :
+Total revenue 
+Average order value ( total revenue /nb orders)
+Taud de croissance de Yoy 
+Taux de discount Moyen
+
+Comprehension du dataset :
+
+ce dataset capture le cycle complet d'une vente en ligne : du moment ou un client ajout un produit au panier jusqu'au paiement 
+Les colonnes de dataset:
+colonnes de commande :
+- order_id : id de la commande ( numeric)
+- status : status actuel de la commande ( categoriel , string)
+- item id : id de chaque article dans le commande ( numeric)
+- sku : stock keeping unit ( code /reference produit ) (string)
+- qty_ordered : quantote commande de cet article (float )
+- price : prix unitair de l'article ( float )
+- discount_amount : montant de la remise (float )
+- total : montant final paye pour cette commande (float )
+-category : category du produit ( string)
+- payment_methode : moyen de painment utilise ( string)
+-bi_st : statut de paiement / statu finanice (string)
+-year : anne de extraite de order : date (numeric)
+- month : mois de extrait de order date (string)
+- ref_num : numer de refrence (numeric)
+-les informations des clientrs : - cust_id: id de client ,name prefix first name , midlle initial , last name , gender , age , full name, email , custoùer since , ssn ( if) ,numero de telephone , place name , county , city , state , zip , region ,user name 
+- discount_percent : pourcentage de remise applique ( float ) 
+-order_date : date de la commande ( date ) 
+
+Mesures DAX pour les KPIs
+-le revenu total = sum ( qtyorders* price)
+- valeur moyenne d'une commande : revenue total divise par le nombre de comandes uniques
+- Taux de croissance Year over Year : calcule la croissance annuelle entre 2020 et 2021 , c'est le pourcentage de variation du revenu par rapport à l'anne presence
+- taux des remises si discount est un pourcentage utilise averahe sinon montant divizepar le revenu pour un taux
