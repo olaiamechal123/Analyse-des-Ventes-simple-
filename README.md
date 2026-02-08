@@ -26,7 +26,27 @@ Après la phase de nettoyage et de préparation, les données ont été restruct
 | **Dim_Customers**   |  Référentiel clients (un enregistrement par cust_id)        |
 | **Dim_Products**    |  Référentiel produits et catégories                         |
 
-## KPIs Calculés (mesures DAX principales)
+
+## Dashboard
+
+![Dashboard Final](https://github.com/olaiamechal123/Analyse-des-Ventes-simple-/blob/main/dasboard.PNG)
+
+## Résultats Clés (extrait du dashboard)
+
+| Métrique                              | Valeur observée              | Commentaire principal                                      |
+|---------------------------------------|------------------------------|------------------------------------------------------------|
+| Nombre de clients uniques             | **~64 255**                  | Base clients significative                                 |
+| Quantité maximale commandée (1 ligne) | **501**                      | Pic exceptionnel (probable commande B2B ou promo massive)  |
+| Quantité minimale                     | **1**                        | Comportement standard                                      |
+| Revenu total période                  | **~498 M$**                  | (≈248 M$ Femmes + 249 M$ Hommes)                           |
+| Répartition Hommes / Femmes           | **50,08% F – 49,92% M**      | Quasi-parité très équilibrée                               |
+| Meilleure région                      | **South**                    | Nettement devant Midwest, West, Northeast                  |
+| Catégorie la plus performante         | **Mobiles & Accessories**    | Très loin devant les autres catégories                     |
+| Taux de remise moyen le plus élevé    | Entertainment / Superstore / Appliances | Jusqu’à ~150–170% (vérifier cohérence des données) |
+| Tranche d’âge la plus contributive    | **30–39 ans**                | Suivie de 60–69, 40–49, 50–59…                             |
+| Évolution AOV                         | 2020 : ~2 307 $ → 2021 : ~2 561 $ | +11 % environ (amélioration panier moyen)          |
+
+# KPIs Calculés (mesures DAX principales)
 
 ```dax
 Total Revenue = 
@@ -53,23 +73,5 @@ DIVIDE(
     [Total Revenue],
     0
 )
-## Dashboard
-
-![Dashboard Final](https://github.com/olaiamechal123/Analyse-des-Ventes-simple-/blob/main/dasboard.PNG)
-
-## Résultats Clés (extrait du dashboard)
-
-| Métrique                              | Valeur observée              | Commentaire principal                                      |
-|---------------------------------------|------------------------------|------------------------------------------------------------|
-| Nombre de clients uniques             | **~64 255**                  | Base clients significative                                 |
-| Quantité maximale commandée (1 ligne) | **501**                      | Pic exceptionnel (probable commande B2B ou promo massive)  |
-| Quantité minimale                     | **1**                        | Comportement standard                                      |
-| Revenu total période                  | **~498 M$**                  | (≈248 M$ Femmes + 249 M$ Hommes)                           |
-| Répartition Hommes / Femmes           | **50,08% F – 49,92% M**      | Quasi-parité très équilibrée                               |
-| Meilleure région                      | **South**                    | Nettement devant Midwest, West, Northeast                  |
-| Catégorie la plus performante         | **Mobiles & Accessories**    | Très loin devant les autres catégories                     |
-| Taux de remise moyen le plus élevé    | Entertainment / Superstore / Appliances | Jusqu’à ~150–170% (vérifier cohérence des données) |
-| Tranche d’âge la plus contributive    | **30–39 ans**                | Suivie de 60–69, 40–49, 50–59…                             |
-| Évolution AOV                         | 2020 : ~2 307 $ → 2021 : ~2 561 $ | +11 % environ (amélioration panier moyen)          |
 
 
