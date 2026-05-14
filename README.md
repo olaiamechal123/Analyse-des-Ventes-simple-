@@ -63,14 +63,6 @@ DIVIDE(
 
 
 
-Avg Discount Rate % = 
-AVERAGE(Sales[discount_percent])
 
-Avg Discount Rate (pondéré) = 
-DIVIDE(
-    SUM(Sales[discount_amount]),
-    [Total Revenue],
-    0
-)
 
 
