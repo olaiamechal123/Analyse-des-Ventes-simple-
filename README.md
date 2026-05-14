@@ -4,7 +4,6 @@
 ## Description du Projet
 
 Projet d’analyse des ventes en ligne sur les exercices 2020 et 2021 dans le but d’optimiser la gestion des stocks et d’améliorer la rétention client.  
-L’analyse suit la méthodologie **CRISP-DM** et se matérialise dans un **dashboard Power BI interactif** avec des mesures DAX.
 
 ## Objectifs du Projet (réalisés)
 
